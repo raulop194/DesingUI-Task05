@@ -8,7 +8,7 @@ import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
-    val DEFAULT_TAG = "default" // El valor por defecto del tag de imagenAvatar.
+    private val DEFAULT_TAG = "default" // El valor por defecto del tag de imagenAvatar.
 
     private lateinit var imageAvatar: ImageView // Objeto que contendra el cuador de imagen.
     private lateinit var userAvatar: TextView // Objeto que contendra el campo de texto.

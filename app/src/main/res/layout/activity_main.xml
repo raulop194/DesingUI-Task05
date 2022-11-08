@@ -5,45 +5,50 @@
     android:id="@+id/layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="3dp"
+    tools:layout_editor_absoluteY="-66dp">
 
     <EditText
         android:id="@+id/avatar_text"
-        android:layout_width="244dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="64dp"
-        android:autofillHints=""
+        android:layout_width="211dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="80dp"
         android:ems="10"
         android:hint="@string/placeholder_plaintext"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         android:textColorHint="#78909C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/avatar_send"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/avatar_send"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_width="94dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
         android:text="@string/ok_button"
-        app:layout_constraintBaseline_toBaselineOf="@+id/avatar_text"
+        android:textColor="#5E35B1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/avatar_text" />
+        app:layout_constraintStart_toEndOf="@+id/avatar_text"
+        app:layout_constraintTop_toTopOf="@+id/avatar_text" />
 
     <ImageView
         android:id="@+id/avatar_image"
-        android:layout_width="367dp"
-        android:layout_height="367dp"
-        android:layout_marginTop="40dp"
-        android:background="#858585"
+        android:layout_width="351dp"
+        android:layout_height="351dp"
+        android:layout_marginTop="60dp"
+        android:background="#636363"
         android:contentDescription="@string/description_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:ignore="ImageContrastCheck,ImageContrastCheck"
         tools:srcCompat="@tools:sample/avatars" />
 </androidx.constraintlayout.widget.ConstraintLayout>
